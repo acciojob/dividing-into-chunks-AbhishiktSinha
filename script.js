@@ -1,4 +1,4 @@
-const arr = [1, 2, 3, 4, 1, 0, 2, 2];
+const arr = [1, 2, 3, 4, 0, 2, 2];
 
 const divide = (arr, n) => {
 
@@ -15,8 +15,8 @@ const divide = (arr, n) => {
 			subarray = [];
 		}
 		else if(sum > n) {
-			result.push(subarray);
 			sum = arr[i];
+			result.push(subarray);
 			subarray = [arr[i]];			
 		}
 		else {
